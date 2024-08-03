@@ -1,0 +1,36 @@
+/* Hovers, transitions and Shadows */
+.subscribe-button{
+  background-color: rgb(200, 0, 0);
+  color: white;
+  border: none;
+  height: 36px; /*Remember to adjust automatically without specifying thes. Use "padding' instead*/
+  width: 150px;
+  border-radius: 2px;
+  cursor: pointer;
+  vertical-align: top; /*aligns elements by the top margin*/
+  margin: right;
+  transition: opacity 1s; /*It should take one second for opacity to change smoothly*/
+  /* Shadow takes four arguments; the first three
+  measured in pixels while the fourth one is the color of the shadow.
+  First - how many px to the right?
+  second - how many to the bottom?
+  third - how many px for opacity? */
+  
+
+}
+
+/* Creating hovers */
+.subscribe-button:hover{
+  /* background-color: green;
+  border-radius: 18px; */
+  opacity: 0.5; /*Fades off when hovered; 0 means great fade, 1 nnormal*/
+  box-shadow: 10px 10px 10px rgba(216, 70, 70, 0.15);
+}
+/* Creating activation -- What happens when you clicked on the button? */
+.subscribe-button:active{
+  background-color: blue;
+}
+
+/* Any word written before {} is called a CSS Selector. Aselector that has is more specific like a class
+and id has higher priority than that of an element */
+
