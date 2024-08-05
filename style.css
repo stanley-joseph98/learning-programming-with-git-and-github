@@ -34,3 +34,82 @@
 /* Any word written before {} is called a CSS Selector. Aselector that has is more specific like a class
 and id has higher priority than that of an element */
 
+/* IMAGE PROPERTIES IN CSS */
+.thumbnail{
+  width: 550px;
+  font-size: 130px;
+  object-fit: cover; /*can be contain*/
+  border-width: 5px;
+  border-style: solid; /*Makes the border visible*/
+  border-color: red;
+  margin-top: 10px;
+  margin-left: 100px; /*pushes image to the left*/
+}
+.thumbnail:hover{
+  filter: blur(0);
+  cursor: pointer;
+
+}
+
+.search-box{
+  width: 300px;
+  margin-left: 200px;
+  margin-top: 20px;
+  height: 25px;
+  border-radius: 05px;
+}
+
+.search-button{
+  background-color: rgb(165, 114, 42);
+  height: 30px;
+  border-radius: 05px;
+}
+
+/* CSS DISPLAY ELEMENT */
+.signup-page{
+  width: 400px;
+  border: solid;
+  border-radius: 0px;
+  height: 200px;
+  margin-top: 30px;
+  margin-left: 300px;
+  margin-bottom: 100px;
+  border-color: white;
+
+}
+.signup-firstname{
+  width: 120px;
+  margin-right: 70px;
+  margin-bottom: 20px;
+  height: 20px;
+  margin-top: 25px;
+  margin-left: 10px;
+}
+.signup-lastname{
+  width: 120px;
+  margin-bottom: 20px;
+  height: 20px;
+}
+.signup-email{
+  width: 370px;
+  margin-right: 70px;
+  margin-top: 20px;
+  height: 20px;
+  margin-left: 10px;
+  
+}
+.signup-button{
+  background-color: rgb(195, 169, 37);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-left: 135px;
+  margin-top: 30px;
+  border-color: rgb(195, 169, 37);
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 10px;
+  cursor: pointer;
+
+}
