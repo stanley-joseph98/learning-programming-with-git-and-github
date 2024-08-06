@@ -19,7 +19,7 @@ body{
 .second-section{
   /* background-color: burlywood; */
   flex: 1;  /*This property allows this div to take up the remaining space after first and third section took their respective fixed lengths*/
-  margin-left: 5px;
+  margin-left: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -27,13 +27,14 @@ body{
 }
 
 .third-section{
-  background-color: lightpink;
+  /* background-color: lightpink; */
   /*width: 200px; commented out since we now have flex and not block This div will have this fixed width*/
-  margin-left: 20px;
+  margin-left: 70px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  flex-shrink: 0;
 }
 
 .hamburger-menu{
