@@ -1,6 +1,9 @@
 body{
   font-family: Roboto, Arial;
   margin: 0;
+  padding-top: 80px; /*Header should not cover our contents*/
+  height: 3000px;
+  padding-left: 80px;
 }
 
 .header-div{
@@ -8,6 +11,25 @@ body{
   justify-content: space-between; /*Distribute the inner divs evenly along the heaer div*/
   display: flex;
   flex-direction: row;
+  position:fixed; /*The eader will stick at the top of the page*/
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+}
+
+.sidebar{
+  background-color: green;
+  color: white;
+  font-weight: 10px;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  top: 50px;
+  width: 72px;
 }
 
 .first-section{
