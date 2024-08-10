@@ -19,6 +19,7 @@ body{
   border-bottom-width: 1px;
   border-bottom-color: black;
   border-bottom-style: solid;
+  margin-bottom: 20px;
 }
 
 .sidebar{
@@ -103,6 +104,37 @@ body{
   margin-left: -1px; /*Pushes an item into the other one in the left so as to appear as if they share the same border*/
 }
 
+.search-button, .voice-button{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-button .tooltip, 
+.voice-button .tooltip{
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-weight: 20px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity o.15s;
+  pointer-events: none;
+  white-space: nowrap; /*Prevents the voice search tooltip from wrapping*/
+}
+
+.search-button:hover .tooltip, 
+.voice-button:hover .tooltip{
+  opacity: 1;
+}
+
 .voice-button{
   height: 37px;
   width: 40px;
@@ -152,7 +184,35 @@ body{
   height: 24px;
 }
 
+.sidebar-link{
+  
+  height: 75px;
+  margin-bottom: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
 
+}
+.sidebar-link:hover{
+  background-color: lightgrey;
+}
+
+.sidebar-link img{
+  height: 24px;
+
+}
+.sidebar-link div{
+  font-family: Roboto, Arial;
+  font-size: 15px;
+  color: black;
+}
+#home-icon{
+  color: black;
+  margin-bottom: 6px;
+  font-size: 20px;
+}
 
 
 

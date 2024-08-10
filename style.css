@@ -113,6 +113,22 @@ and id has higher priority than that of an element */
   cursor: pointer;
 
 }
+
+/* The followingcss tells our web browserthat once a screen resizes to 600px or below inwidth, we should only have two columns */
+@media (max-width:600px) {
+  .signup-button{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* Youcan also set min-width; where the page responds with staetd columns on expansion;  
+For example, the page has four columns when the following code lines are invoked*/
+@media (min-width:1000px) {
+  .signup-button{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
 .red-square{
   background-color: red;
   height: 300px;
@@ -167,3 +183,14 @@ body{
 .right-section{
   background-color: lightgoldenrodyellow;
 }
+
+/* CSS SHORTHANDS */
+/* padding: 10px 4px means padding top and bottom at 10px, and left right at 4px */
+/* padding: 10px, 11px, 13px, 14px denotes padding clockwise from the top */
+/* margin also works the same */
+/* border: width, style, color */
+/* Inheritance works with text properties : What is set to outer div elements are passed to inner elements */
+
+/* READ MORE ON CSS SPECIFICITY */
+
+
