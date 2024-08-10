@@ -1,6 +1,6 @@
 body{
   font-family: Roboto, Arial;
-  margin: 0;
+  margin-right: 0;
   padding-top: 80px; /*Header should not cover our contents*/
   height: 3000px;
   padding-left: 80px;
@@ -12,8 +12,8 @@ body{
   display: flex;
   flex-direction: row;
   position:fixed; /*The eader will stick at the top of the page*/
-  top: 0;
-  left: 0;
+  top: 0; 
+  left: 0; 
   right: 0;
   background-color: white;
   border-bottom-width: 1px;
@@ -127,6 +127,26 @@ body{
 .notifications-icon{
   height: 24px;
 }
+/* SEE HTML FOR FURTHER INSTRUCTIONS ON POSITION RELATVE AND ABSOLUTE */
+
+.notifications-icon-container{
+  position: relative;
+}
+.notifications-count{
+  position: absolute;
+  top: -2px; /*Take the element beyond top*/
+  right: -2px;  /*Take the element beyond right*/
+  background-color: rgba(158, 10, 10, 0.811);
+  color: white;
+  font-family: Roboto, Arial;
+  font-size: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+}
+
 
 .current-user-icon{
   height: 24px;

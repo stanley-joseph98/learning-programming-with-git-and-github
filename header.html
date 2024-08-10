@@ -28,7 +28,12 @@
     <div class="third-section">
       <img class="uploads-icon" src="upload.svg">
       <img class="youtube-apps-icon" src="youtube-apps.svg">
-      <img class="notifications-icon" src="notifications.svg">
+      <!-- To create a counter in the notification bar, wrap the image icon in a div, 
+      then set the position of the new div to relative. [See CSS.] -->
+      <div class="notifications-icon-container">
+        <img class="notifications-icon" src="notifications.svg">
+        <div class="notifications-count">3</div>
+      </div>
       <img class="current-user-icon" src="my-channel.jpeg">
       
     </div>
